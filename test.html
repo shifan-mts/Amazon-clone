@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align vs Justify</title>
+    <style>
+        .container {
+            display: flex;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        .justify-center {
+            flex-direction:;
+            justify-content: center; /* Aligns items horizontally (main axis) */
+        }
+
+        .align-center {
+            flex-direction: ;
+            align-items: center; /* Aligns items vertically (cross axis) */
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Justify Content Center (Horizontal Alignment)</h2>
+    <div class="container justify-center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <h2>Align Items Center (Vertical Alignment)</h2>
+    <div class="container align-center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
